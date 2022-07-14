@@ -97,7 +97,7 @@ nav {
 
 .slideshow-container {
     position: relative;
-    border: 1px solid black;
+    border: 1px solid green;
     height: fit-content;
     width: 100%;
 
@@ -137,4 +137,33 @@ nav {
         transform: translateY(-50%);
         z-index: 1;
     }
+}
+
+.content-container {
+
+    .orange-text {
+        margin-left: 24px;
+        font-family: "Kumbh Sans";
+        font-size: 12px;
+        font-weight: 700;
+        color: $orange;
+        letter-spacing: 1.85px;
+    }
+
+    .bold-text {
+        margin-left: 24px !important; 
+        font-family: "Kumbh Sans";
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .discription {
+        margin-left: 24px;
+        font-family: "Kumbh Sans";
+        font-size: 15px;
+        color: $Dgrayblue;
+        line-height: 25px;
+    }
+
 }
