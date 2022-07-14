@@ -1,7 +1,7 @@
 // green borders - done
 // red borders - problem
 // black border - WIP
-// delete comments above when done :> 
+//  DELETE WHEN DONE :> 
 
 $Vdarkblue: hsl(220, 13%, 13%);
 $Dgrayblue: hsl(219, 9%, 45%);
@@ -14,6 +14,8 @@ $Poragne: hsl(25, 100%, 94%);
 // hide menu on default
 body {
     height: 100vh;
+    background-color: $Lgrayblue;
+    overflow-y: hidden;
 }
 
 .menu{
@@ -23,7 +25,7 @@ body {
     max-width: 250px;
     height: 100vh;
     position: fixed;
-    top: 0;
+    top: -20px;
     z-index: 1000;
 
     #close {
@@ -93,3 +95,46 @@ nav {
     }
 }
 
+.slideshow-container {
+    position: relative;
+    border: 1px solid black;
+    height: fit-content;
+    width: 100%;
+
+    .slide {
+        display: none;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    // this might just stay here until I start adding js DELETE WHEN DONE
+    .slide:nth-child(1){
+        display: block;
+    }
+
+    .arrow {
+        position: absolute;
+        background-color: white;
+        border-radius: 100%;
+        padding: 20px;
+    }
+
+    .next {
+        right: 0;
+        margin-right: 10px;
+        top:50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .prev {
+        left: 0;
+        margin-left: 10px;
+        top:50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+}
