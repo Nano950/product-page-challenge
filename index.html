@@ -24,20 +24,23 @@
 <body>
 
   <nav>
-   
     <div class="menu-container">
       <img class="menu-button" src="./images/icon-menu.svg">
       <img class="logo" src="./images/logo.svg" >
-      <div class="menu">
-        <img id="close" src="./images/icon-close.svg">
-        <ul>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Woman</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
+      <div class="menu-background">
+        <div class="menu">
+          <img id="close" src="./images/icon-close.svg">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Woman</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
+
       <div class="cart-avatar">
         <img id="cart" src="./images/icon-cart.svg" alt="">
         <img id="avatar" src="./images/image-avatar.png">
@@ -83,8 +86,13 @@
     </div>
     
     <div class="quantity">
-      <!-- add counter here -->
+      <div class="text-box">
+        <img class="minus" src="./images/icon-minus.svg">
+        <img class="plus" src="./images/icon-plus.svg">
+        <p class="item-num">0</p>
+      </div>
     </div>
+
     <!-- button that adds a number of shoes based on the quantity counter to the cart -->
     <button class="add-to-cart">
       <img src="./images/icon-cart.svg" alt="shopping cart">
