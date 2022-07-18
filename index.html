@@ -23,24 +23,30 @@
   </head>
   <body>
 
-    <div class="menu-background">
-        <div class="menu">
-          <img id="close" src="./images/icon-close.svg">
-          <ul>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Woman</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+    <div class="menu-background"></div>
+
+    <div class="menu">
+      <img id="close" src="./images/icon-close.svg">
+      <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
     </div>
 
     <nav>
       <div class="menu-container">
         <img class="menu-button" src="./images/icon-menu.svg">
-        <img class="logo" src="./images/logo.svg" >
-
+        <img class="logo" src="./images/logo.svg">
+        <ul class="nav-links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
 
         <div class="cart-avatar">
@@ -73,24 +79,36 @@
 
     </div>
 
-    <div class=" content-container">
-    <div class="text-container">
-      <h1 class="orange-text">Sneaker Company</h1>
-      <h2 class="bold-text">Fall Limited Edition<br>Sneakers</h2>
-      <p class="discription">These low-profile sneakers are your perfect<br> wear companion. Featuring a 
-    durable<br>rubber outer sole, they’ll withstand everything<br>the weather can offer.</p>
-    </div>
 
-    <div class="price-container">
+    <div class="container">
+      <div class="img-container">
+      <img class="main-img" src="./images/image-product-1.jpg">
+      <div class="img-preview">
+        <img class="preview" src="./images/image-product-1-thumbnail.jpg">
+        <img class="preview" src="./images/image-product-2-thumbnail.jpg">
+        <img class="preview" src="./images/image-product-3-thumbnail.jpg">
+        <img class="preview" src="./images/image-product-4-thumbnail.jpg">
+      </div>
+      </div>
+
+      <div class="content-container">
+      <div class="text-container">
+        <h1 class="orange-text">Sneaker Company</h1>
+        <h2 class="bold-text">Fall Limited Edition<br>Sneakers</h2>
+        <p class="discription">These low-profile sneakers are your perfect<br> wear companion. Featuring a 
+      durable<br>rubber outer sole, they’ll withstand everything<br>the weather can offer.</p>
+      </div>
+
+      <div class="price-container">
       <p class="price">$125.00</p>
       <div class="discount">
         <p>50%</p>
       </div>
       <p class="old-price">$250.00</p>
-    </div>
+      </div>
     
-    <div class="quantity">
-      <div class="text-box">
+      <div class="quantity">
+        <div class="text-box">
         <img class="minus" src="./images/icon-minus.svg">
         <img class="plus" src="./images/icon-plus.svg">
         <p class="item-num">0</p>
@@ -98,13 +116,15 @@
     </div>
 
     <!-- button that adds a number of shoes based on the quantity counter to the cart -->
-    <button class="add-to-cart">
-      <div class="cart-text">
-        <img src="./images/icon-cart.svg" alt="shopping cart">
-        <p>Add to cart</p>
+      <button class="add-to-cart">
+        <div class="cart-text">
+          <img src="./images/icon-cart.svg" alt="shopping cart">
+          <p>Add to cart</p>
+        </div>
+      </button>
       </div>
-    </button>
     </div>
+
 
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
