@@ -23,10 +23,10 @@
   </head>
   <body>
 
-    <div class="menu-background"></div>
+    <div id="menu-background" class="menu-background" onclick="closeMobileMenu()"></div>
 
-    <div class="menu">
-      <img id="close" src="./images/icon-close.svg">
+    <div id="menu" class="menu">
+      <img id="close" src="./images/icon-close.svg" onclick="closeMobileMenu()">
       <ul>
           <li><a href="#">Collections</a></li>
           <li><a href="#">Men</a></li>
@@ -38,7 +38,7 @@
 
     <nav>
       <div class="menu-container">
-        <img class="menu-button" src="./images/icon-menu.svg">
+        <img class="menu-button" src="./images/icon-menu.svg" onclick="openMobileMenu()">
         <img class="logo" src="./images/logo.svg">
         <ul class="nav-links">
           <li><a href="#">Collections</a></li>
@@ -50,8 +50,19 @@
 
 
         <div class="cart-avatar">
-          <img id="cart" src="./images/icon-cart.svg" alt="">
+          <img id="cart" src="./images/icon-cart.svg" onclick="openMenu()">
           <img id="avatar" src="./images/image-avatar.png">
+          <div id="cart-menu" class="cart-menu">
+            <h3>Cart</h3>
+            <p class="empty">Your cart is empty</p>
+            <div class="cart-item">
+              <img src="./images/image-product-1-thumbnail.jpg">
+              <p class="item-name"></p>
+              <p class="item-price">$125.00 x <span id="item-quantity"></span> <span id="total-price"></span></p>
+              <img src="./images/icon-delete.svg">
+            </div>
+            <button>Checkout</button>
+          </div>
         </div>
 
       </div>
@@ -79,10 +90,9 @@
 
     </div>
 
-
     <div class="container">
       <div class="img-container">
-      <img class="main-img" src="./images/image-product-1.jpg">
+      <img  class="main-img" src="./images/image-product-1.jpg" onclick="openModal()">
 
       <div class="img-preview">
         <img class="preview" src="./images/image-product-1-thumbnail.jpg">
@@ -110,9 +120,9 @@
     
       <div class="quantity">
         <div class="text-box">
-        <img class="minus" src="./images/icon-minus.svg">
-        <img class="plus" src="./images/icon-plus.svg">
-        <p class="item-num">0</p>
+        <img id="minus" class="minus" src="./images/icon-minus.svg" onclick="decrement()">
+        <img id="plus" class="plus" src="./images/icon-plus.svg" onclick="increment()" >
+        <p id="item-num" class="item-num">0</p>
       </div>
     </div>
 
@@ -126,24 +136,26 @@
       </div>
     </div>
 
-    <div class="modal">
-      <img src="./images/icon-close.svg">
+    <div id="modal" class="modal" >
+      <div class="container-two">
+        <img id="close" src="./images/icon-close.svg" onclick="closeModal()">
 
-      <div class="modal-content">
-        <img class="mySlide" src="./images/image-product-1.jpg">
-        <img class="mySlide" src="./images/image-product-2.jpg">
-        <img class="mySlide" src="./images/image-product-3.jpg">
-        <img class="mySlide" src="./images/image-product-4.jpg">
+        <div class="modal-content">
+          <img class="mySlide" src="./images/image-product-1.jpg">
+          <img class="mySlide" src="./images/image-product-2.jpg">
+          <img class="mySlide" src="./images/image-product-3.jpg">
+          <img class="mySlide" src="./images/image-product-4.jpg">
 
-        <img class="arrow prev" src="./images/icon-previous.svg" alt="">
-        <img class="arrow next" src="./images/icon-next.svg" alt="">
-      </div>
+          <img class="arrow prev" src="./images/icon-previous.svg" alt="">
+          <img class="arrow next" src="./images/icon-next.svg" alt="">
+        </div>
 
-      <div class="img-preview">
-        <img class="preview" src="./images/image-product-1-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-2-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-3-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-4-thumbnail.jpg">
+        <div class="img-preview">
+          <img class="preview" src="./images/image-product-1-thumbnail.jpg">
+          <img class="preview" src="./images/image-product-2-thumbnail.jpg">
+          <img class="preview" src="./images/image-product-3-thumbnail.jpg">
+          <img class="preview" src="./images/image-product-4-thumbnail.jpg">
+        </div>
       </div>
     </div>
 

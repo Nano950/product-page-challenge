@@ -106,14 +106,54 @@ nav {
     }
 
     .cart-avatar {
+        position: relative;
         margin-right: 20px;
         width: fit-content;
         float: right;
-        
+
+        #cart,#avatar {
+            cursor: pointer;
+        }
+
         #avatar {
             width: 100%;
             max-width: 24px;
             margin-left: 22.18px;
+            border-radius: 50%;
+        }
+
+        #avatar:hover {
+            border: 2px solid $orange;
+        }
+
+        .cart-menu {
+            display: none;
+            background-color: white;
+            border-radius: 15px;
+            position: absolute;
+            right:-100%;
+            width: 360px;
+            height: 256px;
+            box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+
+            h3 {
+                font-family: $Kumbh;
+                border-bottom: 1px solid $grayblue;
+                padding-bottom:20px; 
+            }
+
+            p {
+                display: none;
+                font-family: $Kumbh;
+                font-weight: 700;
+                color:$grayblue;
+                width: fit-content;
+                margin: 0 auto;
+                position: relative;
+                top:25%; 
+            }
+
+            .
         }
     }
 }
@@ -153,6 +193,8 @@ nav {
         .cart-avatar {
             transform: translateY(50%);
         }
+
+        // add media query for cart menu styles
     }
 }
 
@@ -219,7 +261,6 @@ nav {
     }
 
     .bold-text {
-        text-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
         margin-left: 24px !important; 
         font-family: $Kumbh;
         font-size: 28px;
@@ -300,6 +341,7 @@ nav {
             border-radius: 15px;
             width: 100%;
             max-width: 445px;
+            cursor: pointer;
         }
 
         .img-preview {
@@ -384,6 +426,7 @@ nav {
     background-color: $orange;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     margin-top: 10px;
     width: 100%;
     max-width: 327px;
@@ -418,11 +461,31 @@ nav {
     height: 100vh;
     background-color: $black;
 
+    .container-two {
+        width: fit-content;
+        margin:0 auto;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+
+        #close {
+            position: absolute;;
+            right: 0;
+            top:-40px;
+            cursor: pointer;
+            filter: brightness(300%);
+            margin-bottom: 24px;
+            width: 100%;
+            max-width: 20px;
+            z-index: 4;
+        }
+
     .modal-content {
         width: fit-content;
         position: relative;
         margin: 0 auto;
-    
+        z-index: 0;
+
         .mySlide {
             display: none;
             width: 100%;
@@ -456,7 +519,7 @@ nav {
             top:50%;
             transform: translateY(-50%);
         }
-    }
+        }
 
     .img-preview {
         width: 100%;
@@ -477,6 +540,6 @@ nav {
             filter: opacity(0.4);
             border: 2px solid $orange;
         }
+        }
     }
 }
-
