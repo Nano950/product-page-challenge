@@ -133,16 +133,17 @@ nav {
             position: absolute;
             right:-100%;
             width: 360px;
-            height: 256px;
+            height: 226px;
             box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
 
             h3 {
                 font-family: $Kumbh;
                 border-bottom: 1px solid $grayblue;
                 padding-bottom:20px; 
+                padding-left: 20px;
             }
 
-            p {
+            .empty {
                 display: none;
                 font-family: $Kumbh;
                 font-weight: 700;
@@ -151,6 +152,65 @@ nav {
                 margin: 0 auto;
                 position: relative;
                 top:25%; 
+            }
+
+            .cart-item {
+                position: relative;
+
+                img {
+                    border-radius: 5px;
+                    width:100%;
+                    max-width: 50px;
+                    margin-left: 20px;
+                }         
+
+                .text {
+                    display: inline-block;
+                    width: fit-content;
+
+                    p {
+                        font-size: 16px;
+                        width: fit-content;
+                        margin: 0;
+                        font-family: $Kumbh;
+                        color: $grayblue;
+                    }
+
+                    #total-price {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+
+                #delete {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-right: 20px;
+                    max-width: 14px;
+                    width: 100%;
+                }
+
+            }
+
+            button {
+                background-color: $orange;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                color: white;
+                display: block;
+                font-family: $Kumbh;
+                font-weight: 700;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+                height: 56px;
+                width: 100%;
+                max-width: 327px;
             }
         }
     }
