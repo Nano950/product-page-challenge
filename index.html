@@ -55,8 +55,8 @@
 
           <div id="cart-menu" class="cart-menu">
             <h3>Cart</h3>
-            <p class="empty">Your cart is empty</p>
-            <div class="cart-item">
+            <p id="empty" class="empty">Your cart is empty</p>
+            <div id="cart-item" class="cart-item">
               <img src="./images/image-product-1-thumbnail.jpg">
 
               <div class="text">
@@ -66,7 +66,7 @@
               <img id="delete" src="./images/icon-delete.svg">
             </div>
 
-            <button class="checkout">Checkout</button>
+            <button id="checkout" class="checkout">Checkout</button>
           </div>
         </div>
 
@@ -97,13 +97,18 @@
 
     <div class="container">
       <div class="img-container">
-      <img  class="main-img" src="./images/image-product-1.jpg" onclick="openModal()">
+      <img  id="main-img" class="main-img" src="./images/image-product-1.jpg" onclick="openModal()">
+      <img class="product-img" src="./images/image-product-1.jpg">
+      <img class="product-img" src="./images/image-product-2.jpg">
+      <img class="product-img" src="./images/image-product-3.jpg">
+      <img class="product-img" src="./images/image-product-4.jpg">
 
-      <div class="img-preview">
-        <img class="preview" src="./images/image-product-1-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-2-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-3-thumbnail.jpg">
-        <img class="preview" src="./images/image-product-4-thumbnail.jpg">
+
+      <div class="img-preview"> 
+        <img class="main-preview" src="./images/image-product-1-thumbnail.jpg" onclick="changeImg(0)">
+        <img class="main-preview" src="./images/image-product-2-thumbnail.jpg" onclick="changeImg(1)">
+        <img class="main-preview" src="./images/image-product-3-thumbnail.jpg" onclick="changeImg(2)">
+        <img class="main-preview" src="./images/image-product-4-thumbnail.jpg" onclick="changeImg(3)">
       </div>
       </div>
 
@@ -132,7 +137,7 @@
     </div>
 
     <!-- button that adds a number of shoes based on the quantity counter to the cart -->
-      <button class="add-to-cart">
+      <button id="add-to-cart" class="add-to-cart" onclick="addToCart()">
         <div class="cart-text">
           <img src="./images/icon-cart.svg" alt="shopping cart">
           <p>Add to cart</p>
@@ -151,15 +156,15 @@
           <img class="mySlide" src="./images/image-product-3.jpg">
           <img class="mySlide" src="./images/image-product-4.jpg">
 
-          <img class="arrow prev" src="./images/icon-previous.svg" alt="">
-          <img class="arrow next" src="./images/icon-next.svg" alt="">
+          <img class="arrow prev" src="./images/icon-previous.svg" onclick="plusSlides(-1)">
+          <img class="arrow next" src="./images/icon-next.svg" onclick="plusSlides(1)">
         </div>
 
         <div class="img-preview">
-          <img class="preview" src="./images/image-product-1-thumbnail.jpg">
-          <img class="preview" src="./images/image-product-2-thumbnail.jpg">
-          <img class="preview" src="./images/image-product-3-thumbnail.jpg">
-          <img class="preview" src="./images/image-product-4-thumbnail.jpg">
+          <img class="preview" src="./images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)">
+          <img class="preview" src="./images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)">
+          <img class="preview" src="./images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)">
+          <img class="preview" src="./images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)">
         </div>
       </div>
     </div>
