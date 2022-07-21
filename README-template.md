@@ -3,7 +3,6 @@
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
-
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -14,9 +13,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,83 +29,75 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./Screenshot%202022-07-20%20205134.png)
+![](./Screenshot%202022-07-20%20205221.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub/ecommerce-product-page-7GVzewmNlU)
+- Live Site URL: [](https://nano950.github.io/product-page-challenge/)
 
 ## My process
 
+-create repo
+-plan webiste
+-add html content
+-style website
+-add responsiveness
+-add interactivity
+-make project live
+
 ### Built with
 
-- Semantic HTML5 markup
+
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- Sass
+-javascript
+-responsive design
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I am unsure if I can say that I ran into any major issue when making this website. An important thing that I believe I have internalized is that a shorter amount of high-foucs and effort work is MUCH better than lots of low focus, low energy work. Within that las 3 days, I have finished over 50% of this project, as opposed to the week before (I tool lots of day-long breaks).
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function addToCart() {
+    if (itemCount > 0) {
+        // remove empty text
+        empty.style.display = "none";
+
+        // replace empty text with cart-item and checkout button
+        cartItem.style.display = "block";
+        checkout.style.display = "block";
+
+        quantity.innerHTML = `${itemCount}`;
+
+        let x = 125 * itemCount;
+        price.innerHTML = `$${x}`;
+    } else {
+        // make empty text re-appear if item count is 0 or below
+        cartItem.style.display = "none";
+        checkout.style.display = "none";
+        empty.style.display = "block";
+    }
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I am proud of this function becuase it worked on the first try.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+-when you try to add a negative number of items to your cart, the counter stays at zero
+-when the lightbox on desktop is opened, all other menus close automatically
+-the number of items in your cart remains after the page is refreshed
+-the function that is used to add items to the cart is too specific, it could be generalized to improve usability
+-thumbnail images do not affect other thumbnails when they are hovered over, this happens in the first because I used a flexbox to arrange them.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1](https://www.w3schools.com) - W3Schools helped me understand how to create a lightbox, as well as a slideshow.\
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Nano950](https://www.frontendmentor.io/home)
