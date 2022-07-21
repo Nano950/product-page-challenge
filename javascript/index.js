@@ -75,7 +75,7 @@ function addToCart() {
 }
 
 // add lightbox functionality
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -113,6 +113,26 @@ function changeImg(n) {
 
     mainImg.setAttribute("src", `${productImages[n].src}`);
     thumbnails[n].className += " active";
+}
 
+// add slideshow functionality on mobile view
+let mobileSlideIndex = 1;
+showMobleSlides(mobileSlideIndex);
 
+function plusMobileSlides(n) {
+    showMobleSlides(mobileSlideIndex += n);
+}
+
+function showMobleSlides(n) {
+    let i;
+    const slides = document.querySelectorAll("img.slide");
+
+    if (n > slides.length) {mobileSlideIndex = 1}
+    if (n < 1) {mobileSlideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+
+    slides[mobileSlideIndex-1].style.display = "block"; 
 }
