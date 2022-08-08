@@ -39,13 +39,13 @@ Users should be able to:
 
 ## My process
 
--create repo
--plan webiste
--add html content
--style website
--add responsiveness
--add interactivity
--make project live
+- create repo
+- plan webiste
+- add html content
+- style website
+- add responsiveness
+- add interactivity
+- make project live
 
 ### Built with
 
@@ -53,8 +53,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Sass
--javascript
--responsive design
+- javascript
+- responsive design
 - Mobile-first workflow
 
 ### What I learned
@@ -88,11 +88,11 @@ I am proud of this function becuase it worked on the first try.
 
 ### Continued development
 
--when you try to add a negative number of items to your cart, the counter stays at zero
--when the lightbox on desktop is opened, all other menus close automatically
--the number of items in your cart remains after the page is refreshed
--the function that is used to add items to the cart is too specific, it could be generalized to improve usability
--thumbnail images do not affect other thumbnails when they are hovered over, this happens in the first because I used a flexbox to arrange them.
+- when you try to add a negative number of items to your cart, the counter stays at zero
+- when the lightbox on desktop is opened, all other menus close automatically
+- the number of items in your cart remains after the page is refreshed
+- the function that is used to add items to the cart is too specific, it could be generalized to improve usability
+- thumbnail images do not affect other thumbnails when they are hovered over, this happens in the first because I used a flexbox to arrange them.
 
 ### Useful resources
 
